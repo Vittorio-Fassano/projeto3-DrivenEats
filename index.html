@@ -25,22 +25,22 @@
 
     <div class="comida">
         <h1>Primeiro, seu prato</h1>
-        <div class="caixascomida">
-            <div class="cxcomida">
+        <div  class="caixascomida">
+            <div id="frango1" class="cxcomida" onclick="escolherFrango1()">
                 <img src="imagens/frango_yin_yang.png">
                 <h2>Frango Yin Yang</h2>
                 <p>Um pouco de batata,</p>
                 <p>um pouco de salada</p>
                 <h3>R$ 14,90</h3>
             </div>
-            <div class="cxcomida">
+            <div id="frango2" class="cxcomida" onclick="escolherFrango2()">
                 <img src="imagens/frango_yin_yang.png">
                 <h2>Frango Yin Yang</h2>
                 <p>Um pouco de batata,</p>
                 <p>um pouco de salada</p>
                 <h3>R$ 14,90</h3>
             </div>
-            <div class="cxcomida">
+            <div id="frango3" class="cxcomida" onclick="escolherFrango3()">
                 <img src="imagens/frango_yin_yang.png">
                 <h2>Frango Yin Yang</h2>
                 <p>Um pouco de batata,</p>
@@ -54,19 +54,19 @@
     <div class="bebida">
       <h1>Agora, sua bebida</h1>
       <div class="caixasbebida">
-          <div class="cxbebida">
+          <div id="coca1" class="cxbebida" onclick="escolherCoca1()">
               <img src="imagens/coquinha_gelada1.png">
               <h2>Coquinha gelada</h2>
               <p>Lata 350ml</p>
               <h3>R$ 4,90</h3>
           </div>
-          <div class="cxbebida">
+          <div id="coca2" class="cxbebida" onclick="escolherCoca2()">
             <img src="imagens/coquinha_gelada1.png">
             <h2>Coquinha gelada</h2>
             <p>Lata 350ml</p>
             <h3>R$ 4,90</h3>
          </div>
-         <div class="cxbebida">
+         <div id="coca3" class="cxbebida" onclick="escolherCoca3()">
             <img src="imagens/coquinha_gelada1.png">
             <h2>Coquinha gelada</h2>
             <p>Lata 350ml</p>
@@ -79,19 +79,19 @@
     <div class="sobremesa">
         <h1>Por fim, sua sobremesa</h1>
         <div class="caixassobremesa">
-            <div class="cxsobremesa">
+            <div id="sobremesa1" class="cxsobremesa" onclick="escolherSobremesa1()">
               <img src="imagens/pudim1.png">
               <h2>Pudim</h2>
               <p>Apenas pudim</p>
               <h3>R$ 7,90</h3>
             </div>
-            <div class="cxsobremesa">
+            <div id="sobremesa2" class="cxsobremesa" onclick="escolherSobremesa2()">
                 <img src="imagens/pudim1.png">
                 <h2>Pudim</h2>
                 <p>Apenas pudim</p>
                 <h3>R$ 7,90</h3>
             </div>
-            <div class="cxsobremesa">
+            <div id="sobremesa3" class="cxsobremesa" onclick="escolherSobremesa3()">
                 <img src="imagens/pudim1.png">
                 <h2>Pudim</h2>
                 <p>Apenas pudim</p>
@@ -106,13 +106,15 @@
 
 
     <div class="barra-fundo">
-        <div class="caixa-bf">
+        <div class="caixa-bf" onclick="finalizarPedidio()">
             <div class="textos-caixa-bf">
              <h2>Selecione os 3 itens</h2>
              <h3>para fechar o pedido</h3>
             </div>
         </div>
     </div>
-    
+
+
+    <script src="script.js"></script>
 </body>
 </html>
