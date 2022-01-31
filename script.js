@@ -11,11 +11,24 @@ let precoBebida;
 let precoSobremesa;
 
 
-function escolherFrango1() {
-    document.getElementById("frango1").style.borderColor = "green";
-    document.getElementById("frango2").style.borderColor = "white";
-    document.getElementById("frango3").style.borderColor = "white";
-    prato = "frango1";
+function escolherFrango() {
+    document.getElementById("frango").style.borderColor = "green";
+    document.getElementById("hamburguer").style.borderColor = "white";
+    document.getElementById("pizza").style.borderColor = "white";
+    prato = "frango";
+    pratoAtivado = true;
+    precoPrato = 19.9;
+
+    if (pratoAtivado && bebidaAtivado && sobremesaAtivado) {
+        botaoAtivado();
+    }
+}
+
+function escolherHamburguer(){
+    document.getElementById("hamburguer").style.borderColor = "green";
+    document.getElementById("frango").style.borderColor = "white";
+    document.getElementById("pizza").style.borderColor = "white";
+    prato = "hamburguer";
     pratoAtivado = true;
     precoPrato = 14.9;
 
@@ -24,26 +37,13 @@ function escolherFrango1() {
     }
 }
 
-function escolherFrango2(){
-    document.getElementById("frango2").style.borderColor = "green";
-    document.getElementById("frango1").style.borderColor = "white";
-    document.getElementById("frango3").style.borderColor = "white";
-    prato = "frango2";
+function escolherPizza(){
+    document.getElementById("pizza").style.borderColor = "green";
+    document.getElementById("frango").style.borderColor = "white";
+    document.getElementById("hamburguer").style.borderColor = "white";
+    prato = "pizza";
     pratoAtivado = true;
-    precoPrato = 14.9;
-
-    if (pratoAtivado && bebidaAtivado && sobremesaAtivado) {
-        botaoAtivado();
-    }
-}
-
-function escolherFrango3(){
-    document.getElementById("frango3").style.borderColor = "green";
-    document.getElementById("frango1").style.borderColor = "white";
-    document.getElementById("frango2").style.borderColor = "white";
-    prato = "frango3";
-    pratoAtivado = true;
-    precoPrato = 14.9;
+    precoPrato = 24.9;
 
     if (pratoAtivado && bebidaAtivado && sobremesaAtivado) {
         botaoAtivado();
@@ -54,11 +54,11 @@ function escolherFrango3(){
 
 
 
-function escolherCoca1() {
-    document.getElementById("coca1").style.borderColor = "green";
-    document.getElementById("coca2").style.borderColor = "white";
-    document.getElementById("coca3").style.borderColor = "white";
-    bebida = "coca1";
+function escolherCoca() {
+    document.getElementById("coca").style.borderColor = "green";
+    document.getElementById("guaraná").style.borderColor = "white";
+    document.getElementById("pepsi").style.borderColor = "white";
+    bebida = "coca";
     bebidaAtivado = true;
     precoBebida = 4.9;
 
@@ -67,11 +67,11 @@ function escolherCoca1() {
     }
 }
 
-function escolherCoca2(){
-    document.getElementById("coca2").style.borderColor = "green";
-    document.getElementById("coca1").style.borderColor = "white";
-    document.getElementById("coca3").style.borderColor = "white";
-    bebida = "coca2";
+function escolherGuaraná(){
+    document.getElementById("guaraná").style.borderColor = "green";
+    document.getElementById("coca").style.borderColor = "white";
+    document.getElementById("pepsi").style.borderColor = "white";
+    bebida = "guaraná";
     bebidaAtivado = true;
     precoBebida = 4.9;
 
@@ -80,11 +80,11 @@ function escolherCoca2(){
     }
 }
 
-function escolherCoca3(){
-    document.getElementById("coca3").style.borderColor = "green";
-    document.getElementById("coca1").style.borderColor = "white";
-    document.getElementById("coca2").style.borderColor = "white";
-    bebida = "coca3";
+function escolherPepsi(){
+    document.getElementById("pepsi").style.borderColor = "green";
+    document.getElementById("coca").style.borderColor = "white";
+    document.getElementById("guaraná").style.borderColor = "white";
+    bebida = "pepsi";
     bebidaAtivado = true;
     precoBebida = 4.9;
 
@@ -96,11 +96,11 @@ function escolherCoca3(){
 
 
 
-function escolherSobremesa1() {
-    document.getElementById("sobremesa1").style.borderColor = "green";
-    document.getElementById("sobremesa2").style.borderColor = "white";
-    document.getElementById("sobremesa3").style.borderColor = "white";
-    sobremesa = "sobremesa1";
+function escolherPudim() {
+    document.getElementById("pudim").style.borderColor = "green";
+    document.getElementById("bolo").style.borderColor = "white";
+    document.getElementById("bala").style.borderColor = "white";
+    sobremesa = "pudim";
     sobremesaAtivado = true;
     precoSobremesa = 7.9;
 
@@ -110,11 +110,11 @@ function escolherSobremesa1() {
 
 }
 
-function escolherSobremesa2(){
-    document.getElementById("sobremesa2").style.borderColor = "green";
-    document.getElementById("sobremesa1").style.borderColor = "white";
-    document.getElementById("sobremesa3").style.borderColor = "white";
-    sobremesa = "sobremesa2";
+function escolherBolo(){
+    document.getElementById("bolo").style.borderColor = "green";
+    document.getElementById("pudim").style.borderColor = "white";
+    document.getElementById("bala").style.borderColor = "white";
+    sobremesa = "bolo";
     sobremesaAtivado = true;
     precoSobremesa = 7.9;
 
@@ -123,13 +123,13 @@ function escolherSobremesa2(){
     }
 }
 
-function escolherSobremesa3(){
-    document.getElementById("sobremesa3").style.borderColor = "green";
-    document.getElementById("sobremesa1").style.borderColor = "white";
-    document.getElementById("sobremesa2").style.borderColor = "white";
-    sobremesa = "sobremesa3";
+function escolherBala(){
+    document.getElementById("bala").style.borderColor = "green";
+    document.getElementById("pudim").style.borderColor = "white";
+    document.getElementById("bolo").style.borderColor = "white";
+    sobremesa = "bala";
     sobremesaAtivado = true;
-    precoSobremesa = 7.9;
+    precoSobremesa = 1.9;
 
     if (pratoAtivado && bebidaAtivado && sobremesaAtivado) {
         botaoAtivado();
@@ -154,8 +154,6 @@ function finalizarPedido() {
     mensagem = ("Olá, gostaria de fazer o pedido: " + prato + ", " + bebida + " e " + sobremesa + ". Total: R$" + totalCorrigido);
 
     window.open("https://wa.me/+5524999999999?text=" + mensagem);
-
-    
 } 
 
 

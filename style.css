@@ -70,9 +70,12 @@ body {
      
 }
 .cxcomida img {
+    Width: 144px;
+    Height: 87px;
     margin-top: 18px;
     margin-left: 10px;
     margin-right: 14px;
+    border-radius: 9px;
 }
 .cxcomida h2 {
     font-family: Roboto;
@@ -147,6 +150,9 @@ body {
 }
 
 .cxbebida img {
+    Width: 144px;
+    Height: 87px;
+    border-radius: 9px;
     margin-top: 18px;
     margin-left: 10px;
     margin-right: 14px;
@@ -220,6 +226,9 @@ body {
 }
 
 .cxsobremesa img {
+    Width: 144px;
+    Height: 87px;
+    border-radius: 9px;
     margin-top: 18px;
     margin-left: 10px;
     margin-right: 14px;
