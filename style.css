@@ -71,7 +71,7 @@ body {
 }
 .cxcomida img {
     margin-top: 18px;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 14px;
 }
 .cxcomida h2 {
@@ -148,7 +148,7 @@ body {
 
 .cxbebida img {
     margin-top: 18px;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 14px;
 }
 
@@ -221,7 +221,7 @@ body {
 
 .cxsobremesa img {
     margin-top: 18px;
-    margin-left: 14px;
+    margin-left: 10px;
     margin-right: 14px;
 }
 
@@ -283,6 +283,32 @@ body {
     justify-content: center;
     align-items: center;
     border: 5px solid white;
+}
+
+button {
+    width: 364px;
+    height: 61px;
+    background-color: #32B72F;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    
+}
+
+#botao {
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    font-size: 20px;
+    font-family: Roboto;
 }
 
 .textos-caixa-bf {
