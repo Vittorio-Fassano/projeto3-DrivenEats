@@ -25,22 +25,22 @@
 
     <div class="comida">
         <h1>Primeiro, seu prato</h1>
-        <div  class="caixascomida">
-            <div id="frango" class="cxcomida" onclick="escolherFrango()">
+        <div  class="caixascomida" data-identifier="dishes">
+            <div id="frango" class="cxcomida" onclick="escolherFrango()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
                 <img src="imagens/frango_yin_yang.png">
                 <h2>Frango Yin Yang</h2>
                 <p>Um pouco de batata,</p>
                 <p>um pouco de salada</p>
                 <h3>R$ 19,90</h3>
             </div>
-            <div id="hamburguer" class="cxcomida" onclick="escolherHamburguer()">
+            <div id="hamburguer" class="cxcomida" onclick="escolherHamburguer()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
                 <img src="imagens/hamburguer.png">
                 <h2>Hambúrguer</h2>
                 <p>Um pouco de queijo,</p>
                 <p>e muita carne</p>
                 <h3>R$ 14,90</h3>
             </div>
-            <div id="pizza" class="cxcomida" onclick="escolherPizza()">
+            <div id="pizza" class="cxcomida" onclick="escolherPizza()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
                 <img src="imagens/pizza.png">
                 <h2>Pizza</h2>
                 <p>Um pouco de molho,</p>
@@ -53,20 +53,20 @@
 
     <div class="bebida">
       <h1>Agora, sua bebida</h1>
-      <div class="caixasbebida">
-          <div id="coca" class="cxbebida" onclick="escolherCoca()">
+      <div class="caixasbebida" data-identifier="dishes">
+          <div id="coca" class="cxbebida" onclick="escolherCoca()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
               <img src="imagens/coquinha_gelada1.png">
               <h2>Coca</h2>
               <p>Lata 350ml</p>
               <h3>R$ 4,90</h3>
           </div>
-          <div id="guaraná" class="cxbebida" onclick="escolherGuaraná()">
+          <div id="guaraná" class="cxbebida" onclick="escolherGuaraná()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
             <img src="imagens/guarana.png">
             <h2>Guaraná</h2>
             <p>Lata 350ml</p>
             <h3>R$ 4,90</h3>
          </div>
-         <div id="pepsi" class="cxbebida" onclick="escolherPepsi()">
+         <div id="pepsi" class="cxbebida" onclick="escolherPepsi()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
             <img src="imagens/pepsi.png">
             <h2>Pepsi</h2>
             <p>Lata 350ml</p>
@@ -78,20 +78,20 @@
 
     <div class="sobremesa">
         <h1>Por fim, sua sobremesa</h1>
-        <div class="caixassobremesa">
-            <div id="pudim" class="cxsobremesa" onclick="escolherPudim()">
+        <div class="caixassobremesa" data-identifier="dishes">
+            <div id="pudim" class="cxsobremesa" onclick="escolherPudim()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
               <img src="imagens/pudim1.png">
-              <h2>Pudim</h2>
+              <h2>Pudim </h2> 
               <p>Apenas pudim</p>
               <h3>R$ 7,90</h3>
             </div>
-            <div id="bolo" class="cxsobremesa" onclick="escolherBolo()">
+            <div id="bolo" class="cxsobremesa" onclick="escolherBolo()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
                 <img src="imagens/bolo.png">
                 <h2>Bolo</h2>
                 <p>Apenas bolo</p>
                 <h3>R$ 7,90</h3>
             </div>
-            <div id="bala" class="cxsobremesa" onclick="escolherBala()">
+            <div id="bala" class="cxsobremesa" onclick="escolherBala()" data-identifier="food-option" data-identifier="food-title" data-identifier="food-price">
                 <img src="imagens/bala.png">
                 <h2>Bala</h2>
                 <p>Apenas bala</p>
@@ -108,7 +108,7 @@
     <div class="barra-fundo">
         <div class="caixa-bf">
             <div class="textos-caixa-bf">
-             <button disable id="botao" onclick="finalizarPedido()" >Selecione os 3 itens <br> para fechar o pedido </button>
+             <button disable id="botao" onclick="finalizarPedido()"> Selecione os 3 itens <br> para fechar o pedido </button>
             </div>
         </div>
     </div>

@@ -67,6 +67,7 @@ function escolherCoca() {
     }
 }
 
+
 function escolherGuaraná(){
     document.getElementById("guaraná").style.borderColor = "green";
     document.getElementById("coca").style.borderColor = "white";
@@ -146,7 +147,7 @@ function botaoAtivado() {
 function finalizarPedido() {
     let mensagem;
     let total;
-    
+
 
     total = precoPrato + precoBebida + precoSobremesa;
     let totalCorrigido = total.toFixed(2);
